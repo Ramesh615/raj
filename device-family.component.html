@@ -1,0 +1,130 @@
+<div class="container-fluid">
+    <div class="form col-12">
+        <kendo-card width="100%" style="margin-top: 130px" class="card">
+            <kendo-card-header>
+                <div class="header">
+                    {{ dbFile.fileName }}
+                </div>
+            </kendo-card-header>
+
+            <kendo-card-body>
+                <div class="topicons">
+                    <span><img class="icon" src=".\images\edit.svg" /></span
+                    ><span><img class="icon" src=".\images\trash.svg" /></span
+                    ><span
+                        ><img class="icon" src=".\images\download.svg"
+                    /></span>
+                </div>
+                <kendo-card width="100%" class="card">
+                    <kendo-card-header class="view-file-card"
+                        >File View</kendo-card-header
+                    >
+                    <kendo-card-body>
+                        <div class="header">
+                            NXP MCU PROGRAMMING INFORMATION
+                        </div>
+
+                        <h6>CUSTOMER INFORMATION</h6>
+                        <table class="tableview">
+                            <tr>
+                                <td>Contact Person</td>
+                                <td>
+                                    <span class="info">
+                                        :
+                                        {{ customerInformation.contactPerson }}
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Phone Number</td>
+                                <td>
+                                    <span class="info">
+                                        :
+                                        {{
+                                            customerInformation.phoneNumber
+                                        }}</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sales Person</td>
+                                <td>
+                                    <span class="info">
+                                        :{{
+                                            customerInformation.salesPerson
+                                        }}</span
+                                    >
+                                </td>
+                            </tr>
+                        </table>
+
+                        <h6>DEVICE INFORMATION</h6>
+                        <table class="tableview">
+                            <tr>
+                                <td>Device Name</td>
+                                <td>
+                                    <span class="info1">
+                                        :
+                                        {{ deviceinformation.deviceName }}</span
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SC Number</td>
+                                <td>
+                                    <span class="info1">
+                                        :
+
+                                        {{ deviceinformation.scNumber }}
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Submit Date</td>
+                                <td>
+                                    <span class="info1">
+                                        :
+                                        {{ deviceinformation.submitDate }}
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </kendo-card-body>
+                </kendo-card>
+                <kendo-card width="100%" class="card">
+                    <kendo-card-header class="view-file-card"
+                        >File History</kendo-card-header
+                    >
+                    <kendo-card-body>
+                        <p>Files checked in : {{ fileHistory.timeStamp }}</p>
+                        <div>
+                            <span>File Names :</span>
+                            <li *ngFor="let fn of fileName">
+                                {{ fn.name }}
+                            </li>
+                        </div>
+                    </kendo-card-body>
+                </kendo-card>
+                <kendo-card width="100%" class="card">
+                    <kendo-card-header class="view-file-card"
+                        >Database : rpchrome-rom (ROM)</kendo-card-header
+                    >
+                    <kendo-card-body
+                        ><p>Test Database : {{ dataBase.test }}</p>
+                        <p>ROM Database : {{ dataBase.rom }}</p>
+                    </kendo-card-body>
+                </kendo-card>
+                <kendo-card width="100%" class="card">
+                    <kendo-card-header class="view-file-card"
+                        >Other Database Files</kendo-card-header
+                    >
+                    <kendo-card-body *ngFor="let other of otherDataBase">
+                        <div>
+                            <li>{{ other.scNum }}</li>
+                        </div>
+                    </kendo-card-body>
+                </kendo-card>
+            </kendo-card-body>
+        </kendo-card>
+    </div>
+</div>

@@ -1,0 +1,133 @@
+::ng-deep .k-step-list-horizontal .k-step-link {
+    margin: auto;
+    max-width: 15em;
+    .k-step-label {
+        max-width: 15em !important;
+        .k-step-text {
+            max-width: 15em !important;
+        }
+    }
+}
+.card {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #7bb1db;
+    border-radius: 12px;
+    opacity: 1;
+    margin-bottom: 4%;
+}
+
+.formControl {
+    flex: 0 0 33.333333%;
+    max-width: 50.333333%;
+}
+
+.align-right {
+    text-align: right;
+    text-transform: uppercase;
+}
+kendo-card-header {
+    color: #ffffff;
+    background: #7bb1db 0% 0% no-repeat padding-box;
+    border: 1px solid lightblue;
+
+    text-align: left;
+    font: normal normal bold 20px/35px Segoe UI;
+    letter-spacing: 0px;
+    color: #3c3c3c;
+}
+
+.view-file-card {
+    color: #3c3c3c;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #62a3d8;
+}
+.icon {
+    width: 26px;
+    height: 22px;
+    margin-right: 6px;
+    margin-bottom: 33px;
+    cursor: pointer;
+}
+.topicons {
+    text-align: end;
+}
+.header {
+    text-align: center;
+    font: normal normal 600 20px/46px Segoe UI;
+    letter-spacing: 0px;
+    color: #3c3c3c;
+
+    opacity: 1;
+}
+.heading {
+    padding: 5px 30px;
+    background-color: lightgray;
+    margin: auto -30px 10px;
+}
+.control-label {
+    font-weight: 400;
+}
+.tableview {
+    width: 50%;
+    margin-bottom: 5%;
+    margin-left: 1%;
+    box-sizing: border-box;
+    border-spacing: 0 15px;
+}
+td {
+    text-align: start;
+}
+kendo-label {
+    width: 132px;
+    height: 35px;
+    text-align: left;
+    font: normal normal normal 20px/35px Segoe UI;
+    letter-spacing: 0px;
+    color: #3c3c3c;
+    opacity: 1;
+}
+.tr {
+    align-items: flex-end;
+    justify-content: end;
+}
+.info {
+    margin-left: -37%;
+}
+
+.input {
+    width: 95%;
+    height: 46px;
+}
+.txtarea {
+    width: 95%;
+    height: 100px;
+}
+.form {
+    margin-right: auto;
+
+    justify-content: center;
+}
+.asterstick {
+    color: red;
+}
+.form-group {
+    margin: 2% 0% 6% 4%;
+}
+
+.nextbtn {
+    background: #003da5 0% 0% no-repeat padding-box;
+    opacity: 1;
+    :hover {
+        background: transparent
+            linear-gradient(180deg, #003da5 0%, #0845a9 43%, #7bb1db 100%) 0% 0%
+            no-repeat padding-box;
+    }
+}
+.btn {
+    width: 96px;
+    height: 37px;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    
+}
